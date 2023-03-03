@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="IceCreamPage.css" />
+		<title>IceCreamPage</title>
+	</head>
+	<body>
+		<!--Header & Navigation-->
+		<header>
+			<div class="navigation">
+				<div class="logo">
+					<div class="nav-bar-text">URASCOLDASICE-CREAM</div>
+				</div>
+				<nav class="nav-bar">
+					<a class="nav-bar-text" href="#">SHOP</a>
+					<a class="nav-bar-text" href="#">DELIVERY</a>
+					<a class="nav-bar-text" href="#">VISIT US</a>
+					<button class="nav-bar-text">ACCOUNT</button>
+				</nav>
+			</div>
+		</header>
+		<!--Main-->
+		<main>
+			<!--Type-selection-->
+			<div class="type-selection">
+				<div>
+					<h1 class="menu-text">HOW WOULD YOU LIKE YOUR ICE-CREAM ?</h1>
+				</div>
+				<div class="type-selection-form">
+					<form>
+						<input type="radio" name="type" id="cone" value="cone" />
+						<label class="menu-text" for="cone">IN A CONE</label>
+						<input type="radio" name="type" id="cup" value="cup" />
+						<label class="menu-text" for="cup">IN A CUP</label>
+						<button class="menu-text" type="reset">Cancel</button>
+					</form>
+				</div>
+			</div>
+			<!--Quantity-selection-->
+			<div class="quantity-selection">
+				<div>
+					<h1 class="menu-text">
+						HOW MANY SCOOPS ( 1€ PER SCOOP ) WOULD YOU LIKE ?
+					</h1>
+				</div>
+				<div class="quantity-selection-form">
+					<form>
+						<label class="menu-text" for="quantity">SCOOP QTY :</label>
+						<input
+							class="menu-text"
+							type="number"
+							name="quantity"
+							id="quantity"
+							min="0"
+							max="5"
+							step="1" />
+						<button class="menu-text" type="reset">Cancel</button>
+					</form>
+				</div>
+			</div>
+			<!--Flavour-selection-->
+			<div class="flavour-selection">
+				<div>
+					<h1 class="menu-text">WHAT FLAVOUR/S WOULD NEED TO BE SCOOPED ?</h1>
+				</div>
+				<div class="flavour-selection-form">
+					<form>
+						<input type="checkbox" name="vanilla" id="vanilla" />
+						<label class="menu-text" for="vanilla">Vanilla</label>
+						<input type="checkbox" name="chocolate" id="chocolate" />
+						<label class="menu-text" for="chocolate">Chocolate</label>
+						<input type="checkbox" name="strawberry" id="strawberry" />
+						<label class="menu-text" for="strawberry">Strawberry</label>
+						<input type="checkbox" name="banana" id="banana" />
+						<label class="menu-text" for="banana">Banana</label>
+						<input type="checkbox" name="coffee" id="coffee" />
+						<label class="menu-text" for="coffee">Coffee</label>
+						<button class="menu-text" type="reset">Cancel</button>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
