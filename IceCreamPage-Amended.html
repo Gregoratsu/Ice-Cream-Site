@@ -12,7 +12,7 @@
 		<header>
 			<div class="navigation">
 				<div class="logo">
-					<div class="nav-bar-text">URASCOLDASICE-CREAM</div>
+					<div class="nav-bar-text">ICY ICE-CREAM</div>
 				</div>
 				<nav class="nav-bar">
 					<a class="nav-bar-text" href="#">SHOP</a>
@@ -31,28 +31,36 @@
 				</div>
 				<div class="type-selection-form">
 					<form>
-						<span class="selection">
+						<div class="selection">
 							<input type="radio" name="type" id="cone" value="cone" />
-							<label class="menu-text" for="cone">IN A CONE</label></span
-						>
-						<span class="selection">
+							<label class="sub-menu-text" for="cone">IN A CONE</label>
+						</div>
+						<div class="selection">
 							<input type="radio" name="type" id="cup" value="cup" />
-							<label class="menu-text" for="cup">IN A CUP</label></span
-						>
-						<button class="menu-text" type="reset">Cancel</button>
+							<label class="sub-menu-text" for="cup">IN A CUP</label>
+						</div>
+						<button class="sub-menu-text" type="reset">Cancel</button>
 					</form>
 				</div>
+			</div>
+			<!--Type-Selection-Image-->
+			<div class="type-selection-images">
+				<img class="type-image" src="ice-cream-cone.png" alt="" />
+				<img class="type-image" src="ice-cream-cup.png" alt="" />
 			</div>
 			<!--Flavour-selection-->
 			<div class="flavour-selection">
 				<div>
-					<h1 class="menu-text">WHAT FLAVOUR/S WOULD NEED TO BE SCOOPED ?</h1>
+					<h1 class="menu-text">
+						WHAT FLAVOUR/S WOULD NEED TO BE SCOOPED - 1 scoop = 1 euro - ?
+					</h1>
 				</div>
 				<div class="flavour-selection-form">
 					<form>
-						<span class="selection">
+						<div class="selection">
 							<input type="checkbox" name="vanilla" id="vanilla" />
-							<label class="menu-text flavour-name" for="vanilla">Vanilla</label
+							<label class="sub-menu-text flavour-name" for="vanilla"
+								>Vanilla</label
 							><input
 								class="flavour-qty"
 								type="number"
@@ -61,10 +69,10 @@
 								min="0"
 								max="5"
 								step="1" />
-						</span>
-						<span class="selection">
+						</div>
+						<div class="selection">
 							<input type="checkbox" name="chocolate" id="chocolate" />
-							<label class="menu-text flavour-name" for="chocolate"
+							<label class="sub-menu-text flavour-name" for="chocolate"
 								>Chocolate</label
 							><input
 								class="flavour-qty"
@@ -73,11 +81,11 @@
 								id="chocolatequantity"
 								min="0"
 								max="5"
-								step="1"
-						/></span>
-						<span class="selection">
+								step="1" />
+						</div>
+						<div class="selection">
 							<input type="checkbox" name="strawberry" id="strawberry" />
-							<label class="menu-text flavour-name" for="strawberry"
+							<label class="sub-menu-text flavour-name" for="strawberry"
 								>Strawberry</label
 							><input
 								class="flavour-qty"
@@ -86,11 +94,12 @@
 								id="strawberryquantity"
 								min="0"
 								max="5"
-								step="1"
-						/></span>
-						<span class="selection">
+								step="1" />
+						</div>
+						<div class="selection">
 							<input type="checkbox" name="banana" id="banana" />
-							<label class="menu-text flavour-name" for="banana">Banana</label
+							<label class="sub-menu-text flavour-name" for="banana"
+								>Banana</label
 							><input
 								class="flavour-qty"
 								type="number"
@@ -98,11 +107,12 @@
 								id="bananaquantity"
 								min="0"
 								max="5"
-								step="1"
-						/></span>
-						<span class="selection">
+								step="1" />
+						</div>
+						<div class="selection">
 							<input type="checkbox" name="coffee" id="coffee" />
-							<label class="menu-text flavour-name" for="coffee">Coffee</label
+							<label class="sub-menu-text flavour-name" for="coffee"
+								>Coffee</label
 							><input
 								class="flavour-qty"
 								type="number"
@@ -110,12 +120,19 @@
 								id="coffeequantity"
 								min="0"
 								max="5"
-								step="1"
-						/></span>
-						<span> <button class="menu-text" type="reset">Cancel</button></span>
+								step="1" />
+						</div>
+						<div>
+							<button class="sub-menu-text" type="reset">Cancel</button>
+						</div>
 					</form>
 				</div>
 			</div>
 		</main>
+		<footer>
+			<div class="footer-navigation">
+				<div class="nav-bar-text">Attempted devolpment by Greg L</div>
+			</div>
+		</footer>
 	</body>
 </html>
