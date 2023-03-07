@@ -62,7 +62,7 @@ button {
 main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(6, 0.5fr);
+	grid-template-rows: repeat(6, 0.25fr);
 }
 
 .menu-text {
@@ -100,10 +100,25 @@ main {
 .type-selection-form {
 	align-self: flex-end;
 }
+/*
 .type-selection-form > form {
 	display: flex;
 	flex-direction: row;
 	justify-self: center;
+}*/
+.type-selection-form > form {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 3rem;
+}
+.cone {
+	grid-column: 2/3;
+}
+.cup {
+	grid-column: 3/4;
+}
+.type-reset {
+	grid-column: 4/5;
 }
 .type-selection-images {
 	border-radius: 3rem;
@@ -116,8 +131,11 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 }
-.type-image {
-	color: rgb(255, 0, 102);
+#cone-image {
+	height: 20vh;
+	width: 20vw;
+}
+#cup-image {
 	height: 20vh;
 	width: 20vw;
 }
@@ -133,13 +151,82 @@ main {
 	margin: 1rem;
 	align-items: start;
 }
+.flavour-selection-images {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+#vanilla-img {
+	display: none;
+	grid-column: 2/3;
+	height: 15rem;
+	width: 15rem;
+	margin: 1rem;
+}
+#chocolate-img {
+	display: none;
+	grid-column: 3/4;
+	height: 15rem;
+	width: 15rem;
+	margin: 1rem;
+}
+#strawberry-img {
+	display: none;
+	grid-column: 4/5;
+	height: 15rem;
+	width: 15rem;
+	margin: 1rem;
+}
+#banana-img {
+	display: none;
+	grid-column: 5/6;
+	height: 15rem;
+	width: 15rem;
+	margin: 1rem;
+}
+#coffee-img {
+	display: none;
+	grid-column: 6/7;
+	height: 15rem;
+	width: 15rem;
+	margin: 1rem;
+}
+/*
 .flavour-selection-form {
 	align-self: flex-end;
 }
 .flavour-selection-form > form {
 	display: flex;
 	flex-direction: row;
+}*/
+
+.flavour-selection-form > form {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	padding: 3rem;
 }
+.vanilla {
+	grid-column: 2/3;
+	display: flex;
+	flex-direction: row;
+}
+.chocolate {
+	grid-column: 3/4;
+}
+.strawberry {
+	grid-column: 4/5;
+}
+.banana {
+	grid-column: 5/6;
+}
+.coffee {
+	grid-column: 6/7;
+}
+.flavour-reset {
+	grid-column: 7/8;
+	justify-self: end;
+	align-self: flex-end;
+}
+
 .selection {
 	display: flex;
 	flex-direction: row;

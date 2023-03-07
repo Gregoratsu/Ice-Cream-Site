@@ -33,22 +33,24 @@
 				</div>
 				<div class="type-selection-form">
 					<form>
-						<div class="selection">
+						<div class="selection cone">
 							<input type="radio" name="type" id="cone" value="cone" />
 							<label class="sub-menu-text" for="cone">IN A CONE</label>
 						</div>
-						<div class="selection">
+						<div class="selection cup">
 							<input type="radio" name="type" id="cup" value="cup" />
 							<label class="sub-menu-text" for="cup">IN A CUP</label>
 						</div>
-						<button class="sub-menu-text" type="reset">Cancel</button>
+						<button class="sub-menu-text type-reset" type="reset">
+							Cancel
+						</button>
 					</form>
 				</div>
 			</div>
 			<!--Type-Selection-Image-->
 			<div class="type-selection-images">
-				<img class="type-image" src="ice-cream-cone.png" alt="" />
-				<img class="type-image" src="ice-cream-cup.png" alt="" />
+				<img id="cone-image" src="ice-cream-cone.png" alt="" />
+				<img id="cup-image" src="ice-cream-cup.png" alt="" />
 			</div>
 			<!--Flavour-selection-->
 			<div class="flavour-selection">
@@ -57,9 +59,22 @@
 						WHAT FLAVOUR/S WOULD NEED TO BE SCOOPED - 1 scoop = 1 euro - ?
 					</h1>
 				</div>
+				<div class="flavour-selection-images">
+					<img id="vanilla-img" src="ice-cream-flavour-vanilla.png" alt="" />
+					<img
+						id="chocolate-img"
+						src="ice-cream-flavour-chocolate.png"
+						alt="" />
+					<img
+						id="strawberry-img"
+						src="ice-cream-flavour-strawberry.png"
+						alt="" />
+					<img id="banana-img" src="ice-cream-flavour-banana.png" alt="" />
+					<img id="coffee-img" src="ice-cream-flavour-coffee.png" alt="" />
+				</div>
 				<div class="flavour-selection-form">
 					<form>
-						<div class="selection">
+						<div class="selection vanilla">
 							<input type="checkbox" name="vanilla" id="vanilla" />
 							<label class="sub-menu-text flavour-name" for="vanilla"
 								>Vanilla</label
@@ -72,7 +87,7 @@
 								max="5"
 								step="1" />
 						</div>
-						<div class="selection">
+						<div class="selection chocolate">
 							<input type="checkbox" name="chocolate" id="chocolate" />
 							<label class="sub-menu-text flavour-name" for="chocolate"
 								>Chocolate</label
@@ -85,7 +100,7 @@
 								max="5"
 								step="1" />
 						</div>
-						<div class="selection">
+						<div class="selection strawberry">
 							<input type="checkbox" name="strawberry" id="strawberry" />
 							<label class="sub-menu-text flavour-name" for="strawberry"
 								>Strawberry</label
@@ -98,7 +113,7 @@
 								max="5"
 								step="1" />
 						</div>
-						<div class="selection">
+						<div class="selection banana">
 							<input type="checkbox" name="banana" id="banana" />
 							<label class="sub-menu-text flavour-name" for="banana"
 								>Banana</label
@@ -111,7 +126,7 @@
 								max="5"
 								step="1" />
 						</div>
-						<div class="selection">
+						<div class="selection coffee">
 							<input type="checkbox" name="coffee" id="coffee" />
 							<label class="sub-menu-text flavour-name" for="coffee"
 								>Coffee</label
@@ -125,7 +140,9 @@
 								step="1" />
 						</div>
 						<div>
-							<button class="sub-menu-text" type="reset">Cancel</button>
+							<button class="sub-menu-text flavour-reset" type="reset">
+								Cancel
+							</button>
 						</div>
 					</form>
 				</div>
