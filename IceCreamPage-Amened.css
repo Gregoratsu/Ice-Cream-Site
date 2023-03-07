@@ -155,6 +155,7 @@ main {
 }
 
 .flavour-qty {
+	display: none;
 	background-color: rgb(72, 145, 237);
 	width: 3.6rem;
 	height: 2.3rem;
@@ -175,7 +176,7 @@ main {
 	background-size: 1rem;
 }
 .footer-navigation > .nav-bar-text {
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 }
 
 @media (max-width: 1200px) {
