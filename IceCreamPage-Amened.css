@@ -132,12 +132,14 @@ main {
 	justify-content: space-between;
 }
 #cone-image {
-	height: 20vh;
-	width: 20vw;
+	display: none;
+	height: 20rem;
+	width: 20rem;
 }
 #cup-image {
-	height: 20vh;
-	width: 20vw;
+	display: none;
+	height: 20rem;
+	width: 20rem;
 }
 
 .flavour-selection {

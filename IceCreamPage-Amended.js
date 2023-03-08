@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+    $("input[name='type']").click(function () {
+        if ($("#cone").is(":checked")) {
+            $("#cone-image").show();
+        } else { $("#cone-image").hide(); }
+    });
+
+    $("input[name='type']").click(function () {
+        if ($("#cup").is(":checked")) {
+            $("#cup-image").show();
+        } else { $("#cup-image").hide(); }
+    });
+
     $('#vanilla').click(function () {
         if (this.checked) {
             $('#vanillaquantity').show();
